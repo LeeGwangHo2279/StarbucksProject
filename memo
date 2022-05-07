@@ -30,3 +30,7 @@
         <a href="/login">Login</a>
     </body>
 </html> <!-- 종료 태그 -->
+
+-요소 (Element)
+    <태그> 내용 </태그> 
+시작(열린)태그 요소의 내용(contents)  종료(닫힌)태그
