@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head></head>
+<body>
+    <div><!-- 블록 요소 (특별한 의미가 없는 구분을 위한 요소. Division) -->
+        <h1></h1> <!-- 블록 요소(제목을 의미하는 요소. (Heading) 1~6 까지 있음) 숫자가 작을수록 더 중요한 제목을 정의 -->
+        <p></p> <!-- 블록 요소 (문장을 의미하는 요소 (Paragraph) 어떤 문장이구나 라고 생각하자) -->
+        <img src="" alt="" /> <!-- 인라인(글자)요소 이미지를 삽입하는 요소. src, alt 둘다 필수 속성 -->>
+        <ul>            <!-- 블록 요소 (순서가 필요없는 목록의 집합을 의미) Unordered List -->
+            <li></li>   <!-- 블록 요소 (목록내 각 항목 List Item) -->
+            <li></li>
+            <li></li>
+        </ul>
+
+        <a href="https://www.naver.com">Naver</a> <!--  인라인 글자 요소 다른/같은 페이지로 이동하는 하이퍼링크를 지정하는 요소 -->
+        <a href="https://www.google.com" target="_blank">Google</a> <!-- 링크URL의 표시(브라우저 탭) 위치 새로운 탭에 표시하는것, 새탭에 열겠다. -->
+        
+        <span></span> <!-- 인라인 글자 요소 특별한 의미가 없는 구분을 위한 요소 -->
+                      <!-- Span 부분만 CSS를 추가해서 넣을수 있다. -->
+        <br /> <!-- 인라인 글자 요소 줄바꿈 요소. Break -->
+        <input type="text" valeu="text안에 값을 넣을수있다.(미리 입력된 값(데이터)" placeholder="사용자가 입력할 값(데이터)의 힌트" /> <!-- 인라인(글자) 요소 블록 상자 요소 = inline-block, type은 입력받은 데이터의 타입-->                
+        <input type="text" disabled /> <!-- 입력 요소 비활성화 -->
+        
+        <label> <!-- 인라인 글자 요소 라벨 가능 요소의 제목 -->
+            <input type="checkbox" /> Apple <!-- 사용자에게 체크 여부를 입력 받음! -->
+            <input type="checkbox" checked /> Banana <!-- 체크되어서 나옴! -->
+        </label>
+
+        <label> <!-- 인라인 글자 요소 라벨 가능 요소의 제목 -->
+            <input type="radio" name="fruits" /> Apple <!-- 사용자에게 체크 여부를 그룹에서 1개만 입력 받음! 그룹이름을 통해 선택이 가능-->
+            <input type="radio" name="fruits" /> Banana <!-- 체크되어서 나옴! -->
+        </label>
+
+        <table> <!-- 테이블요소, 블록 요소 -->
+            <tr> <!--테이블 로우 (행) -->
+                <td>1-1</td><td>1-2</td> <!-- 테이블 table data 열(column) cell 셀 칸 -->
+            </tr>
+            <tr>
+                <td>2-1</td><td>2-2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
