@@ -71,3 +71,39 @@
 Ex) Hellow World 요소가 수평으로 쌓임, 포함한 콘텐츠 크기만큼 자동으로 줄어듬!
 
 0510 아이디 셋팅 이후에 푸쉬 확인 테스트
+
+-주석 키 Ctrl + / 수정사항이나 참고사항 작성 
+
+전역속성
+  -title 속성은 전역속성으로 바디안에 사용되는곳에는 다 사용가능 
+  <태그 title="설명"> </태그>
+      요소의 정보나 설명을 지정
+
+  -CSS
+
+  -Class 요소를 지칭하는 중복 가능한 이름
+  ex) class 이름 
+  .이름{
+    color : red;
+  }
+
+  -id="이름" 요소를 지칭하는 고유한 이름 
+  ex) id이름
+  #이름{
+    color : blue;
+  }
+
+  - <태그 data-이름="데이터"></태그> 요소에 데이터를 지정
+  ex) <div data-fruit-name="apple">사과</div>
+      <div data-fruit-name="banana">바나나</div>
+
+      const els = document.querySelectorAll('div')
+      els.forEach(el => {
+        console.log(el.dataset.fruitName )
+      })
+
+-Script defer
+<script src="./abc/def.js"></script>
+만약에 아래의 바디 부분을 읽고나서 script를 적용하고싶을땐      
+<script defer src="./abc/def.js"></script>
+defer를 추가해주면된다.
